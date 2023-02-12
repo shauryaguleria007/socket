@@ -14,7 +14,7 @@ class InMemorySessionStore extends SessionStore {
     return this.session.get(id)
   }
   saveSession(id, session) {
-    this.sessions.set(id, session)
+    this.session.set(id, session)
   }
   findAllSessions() {
     return [...this.session.values()]
